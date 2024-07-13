@@ -24,13 +24,6 @@ class PerfumeHeader extends HTMLElement {
             background: rgba(255, 255, 255, 0.8);
         }
 
-        .navbar ul li a {
-            text-decoration: none;
-            color: black;
-            font-size: 18px;
-            transition: color 0.3s;
-        }
-
         .navbar ul li a:hover {
             color: #d44181;
         }
@@ -43,13 +36,6 @@ class PerfumeHeader extends HTMLElement {
 
         .navbar ul li {
             margin: 0 15px;
-        }
-
-        .navbar ul li a {
-            text-decoration: none;
-            color: black;
-            font-size: 18px;
-            transition: color 0.3s;
         }
 
         .navbar ul li a:hover {
@@ -76,9 +62,11 @@ class PerfumeHeader extends HTMLElement {
   
   .navbar ul li a {
     text-decoration: none;
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s;
   }
   
   .navbar ul li::after {
@@ -118,14 +106,14 @@ class PerfumeHeader extends HTMLElement {
         }
         </style>
              <div class="navbar">
-                <a href="home.html" class="brand">Essence Aroma</a>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="history.html">History</a></li>
-                    <li><a href="types.html">Types</a></li>
-                    <li><a href="notes.html">Notes</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <a href="/" class="brand">Essence Aroma</a>
+                 <ul>
+                    <li><a href="/essence/home/">Home</a></li>
+                    <li><a href="/essence/about/">About Us</a></li>
+                    <li><a href="/essence/history/">History</a></li>
+                    <li><a href="/essence/types/">Types</a></li>
+                    <li><a href="/essence/notes/">Notes</a></li>
+                    <li><a href="/essence/contact/">Contact</a></li>
                 </ul>
             </div>
         `;

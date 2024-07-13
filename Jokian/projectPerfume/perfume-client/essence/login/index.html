@@ -1,27 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="../../main.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             background: #f8f9fa;
             color: rgb(255, 255, 255);
-        }
-
-        .banner {
-            background: url('background85.jpg') no-repeat center center/cover;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            position: relative;
-            padding-bottom: 50px;
         }
 
         .navbar {
@@ -78,7 +68,7 @@
         .content h1 {
             font-size: 36px;
             margin-bottom: 20px;
-            color: black; /* Set "SIGN UP" text color to black */
+            color: black; /* Set "LOG IN" text color to black */
         }
 
         .content label {
@@ -90,7 +80,6 @@
         }
 
         .content input[type="text"],
-        .content input[type="email"],
         .content input[type="password"] {
             width: calc(100% - 20px);
             padding: 10px;
@@ -117,6 +106,21 @@
             background: #d44181;
         }
 
+        .forgot-password {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .forgot-password a {
+            color: #d44181;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
             .navbar {
                 flex-direction: column;
@@ -140,32 +144,20 @@
     </style>
 </head>
 <body>
+    <perfume-header></perfume-header>
     <div class="banner">
-        <div class="navbar">
-            <a href="home.html" class="brand">Essence Aroma</a>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="types.html">Types</a></li>
-                <li><a href="notes.html">Notes</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
         <div class="content">
-            <h1>SIGN UP</h1><br>
-            <form action="signup.php" method="post">
+            <h1>LOG IN</h1>
+            <form action="login.php" method="POST">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required><br>
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required><br>
-                <input type="submit" value="Sign Up">
+                <input type="submit" value="Login">
+                <p class="forgot-password"><a href="#">Forgot password?</a></p>
             </form>
         </div>
     </div>
+    <script src="../../components/navbar.js"></script>
 </body>
 </html>

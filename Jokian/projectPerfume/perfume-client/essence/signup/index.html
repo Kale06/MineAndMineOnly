@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../../main.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -79,7 +78,7 @@
         .content h1 {
             font-size: 36px;
             margin-bottom: 20px;
-            color: black; /* Set "LOG IN" text color to black */
+            color: black; /* Set "SIGN UP" text color to black */
         }
 
         .content label {
@@ -91,6 +90,7 @@
         }
 
         .content input[type="text"],
+        .content input[type="email"],
         .content input[type="password"] {
             width: calc(100% - 20px);
             padding: 10px;
@@ -115,21 +115,6 @@
 
         .content input[type="submit"]:hover {
             background: #d44181;
-        }
-
-        .forgot-password {
-            margin-top: 20px;
-            text-align: right;
-        }
-
-        .forgot-password a {
-            color: #d44181;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .forgot-password a:hover {
-            text-decoration: underline;
         }
 
         @media (max-width: 768px) {
@@ -168,14 +153,17 @@
             </ul>
         </div>
         <div class="content">
-            <h1>LOG IN</h1>
-            <form action="login.php" method="post">
+            <h1>SIGN UP</h1><br>
+            <form action="signup.php" method="post">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required><br>
-                <input type="submit" value="Login">
-                <p class="forgot-password"><a href="#">Forgot password?</a></p>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required><br>
+                <input type="submit" value="Sign Up">
             </form>
         </div>
     </div>

@@ -1,141 +1,220 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+body {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(background85.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #fcafaf;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 150px;
+  text-align: left;
+  color: #fff;
+}
+
+.perfume-section {
+  margin: 40px 0;
+}
+
+.perfume-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f0a500;
+  padding-bottom: 10px;
+}
+
+.perfume {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.perfumeh3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #fcafaf;
+}
+
+.perfume img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.perfume h5 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #d18b47;
+}
+
+.perfume ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.perfume p {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.perfumep b {
+  display: block;
+  margin: 10px 0;
+}
+
+.perfume .ingredients,
+.perfume .instructions {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+}
+
+.perfume .instructions {
+  margin-left: 5%;
+}
+
+.banner {
+  background: url('./background85.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.card {
+  display: flex;
+  width: 800px;
+  background-color: rgba(255, 255, 255, 0.753);
+  padding: 60px;
+  border-radius: 15px;
+  justify-content: center;
+
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    width: 300px
   }
-  
-  body {
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(background85.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-    overflow-x: hidden;
-  }
-  
-  .navbar {
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-  }
-  
-  .logo {
-    width: 120px;
-    cursor: pointer;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar ul li {
-    margin: 0 20px;
-    position: relative;
-  }
-  
-  .navbar ul li a {
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-  
-  .navbar ul li::after {
-    content: '';
-    height: 3px;
-    width: 0;
-    background: #fcafaf;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-  }
-  
-  .navbar ul li:hover::after {
-    width: 100%;
-  }
-  
-  .content {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 150px;
-    text-align: left;
-    color: #fff;
-  }
-  
-  .perfume-section {
-    margin: 40px 0;
-  }
-  
-  .perfume-section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #f0a500;
-    padding-bottom: 10px;
-  }
-  
-  .perfume{
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .perfumeh3 {
-    font-size: 28px;
-    margin-bottom: 10px;
-    color: #fcafaf;
-  }
-  
-  .perfume img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .perfume h5 {
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #d18b47;
-  }
-  
-  .perfume ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-  
-  .perfume p {
-    margin: 10px 0;
-    text-align: left; 
-  }
-  
-  .perfumep b {
-    display: block;
-    margin: 10px 0;
-  }
-  
-  .perfume .ingredients, .perfume .instructions {
-    display: inline-block;
-    vertical-align: top;
-    width: 45%; 
-  }
-  
-  .perfume .instructions {
-    margin-left: 5%;
-  }
-  
+}
+
+.square-item {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.small-square-item {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.kal-button {
+  color: rgb(184, 37, 93);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 300ms ease-out;
+}
+
+.kal-button:hover {
+  color: rgb(128, 15, 71);
+  font-size: large;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #00000000;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 150ms ease-out;
+  font-size: 16pt;
+}
+
+button:hover {
+  scale: 1.2;
+  color: #d10a45;
+}
+
+button:active {
+  scale: 0.9;
+  color: #a7a7a7;
+}
+
+.flexed {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.flexed p {
+  text-align: justify;
+}

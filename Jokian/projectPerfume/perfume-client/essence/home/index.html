@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../../main.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         body {
@@ -14,8 +14,6 @@
         }
 
         .banner {
-            background: url('background85.jpg') no-repeat center center/cover;
-            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -99,21 +97,13 @@
     </style>
 </head>
 <body>
+    <perfume-header></perfume-header>
     <div class="banner">
-        <div class="navbar">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="types.html">Types</a></li>
-                <li><a href="notes.html">Notes</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
         <div class="content">
             <h1>Welcome to Essence Aroma</h1>
             <p>Our website provides comprehensive information on various types of perfumes, helping you discover the world of fragrances and understand what makes each scent unique. You'll find expert advice on selecting the right fragrance for you, ensuring you choose a scent that perfectly matches your style and preferences. Join us in exploring the captivating world of aromas and find your signature scent with Essence Aroma!</p>
         </div>
     </div>
+    <script src="../../components/navbar.js"></script>
 </body>
 </html>
