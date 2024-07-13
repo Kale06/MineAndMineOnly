@@ -110,8 +110,8 @@ class PerfumeHeader extends HTMLElement {
                  <ul>
                     <li><a href="/essence/home/">Home</a></li>
                     <li><a href="/essence/about/">About Us</a></li>
-                    <li><a href="/essence/history/">History</a></li>
-                    <li><a href="/essence/types/">Types</a></li>
+                    <li><a href="/501/">History</a></li>
+                    <li><a href="/501/">Types</a></li>
                     <li><a href="/essence/notes/">Notes</a></li>
                     <li><a href="/essence/contact/">Contact</a></li>
                 </ul>
