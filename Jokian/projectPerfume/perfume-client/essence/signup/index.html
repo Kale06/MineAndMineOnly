@@ -4,24 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="/main.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             background: #f8f9fa;
             color: rgb(255, 255, 255);
-        }
-
-        .banner {
-            background: url('background85.jpg') no-repeat center center/cover;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            position: relative;
-            padding-bottom: 50px;
         }
 
         .navbar {
@@ -140,18 +129,8 @@
     </style>
 </head>
 <body>
+    <perfume-header></perfume-header>
     <div class="banner">
-        <div class="navbar">
-            <a href="home.html" class="brand">Essence Aroma</a>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="types.html">Types</a></li>
-                <li><a href="notes.html">Notes</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
         <div class="content">
             <h1>SIGN UP</h1><br>
             <form action="signup.php" method="post">
@@ -167,5 +146,6 @@
             </form>
         </div>
     </div>
+    <script src="../../components/navbar.js"></script>
 </body>
 </html>
