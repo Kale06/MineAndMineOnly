@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background: #f8f9fa;
+            color: rgb(255, 255, 255);
+        }
+
+        .banner {
+            background: url('background85.jpg') no-repeat center center/cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            padding-bottom: 50px;
+        }
+
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #d44181;
+        }
+
+        .navbar .brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 500px;
+            margin: 200px auto 0;
+            text-align: center; /* Center text alignment */
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: black; /* Set "SIGN UP" text color to black */
+        }
+
+        .content label {
+            font-size: 18px;
+            color: black; /* Set label color to black */
+            display: block; /* Ensure labels are block elements */
+            text-align: left; /* Align text to the left */
+            margin-bottom: 5px; /* Add some margin below labels */
+        }
+
+        .content input[type="text"],
+        .content input[type="email"],
+        .content input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #575151;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .content input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #fd94c2;
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .content input[type="submit"]:hover {
+            background: #d44181;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 10px 20px;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar ul li {
+                margin: 10px 0;
+            }
+
+            .content {
+                margin: 150px auto 0;
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <a href="home.html" class="brand">Essence Aroma</a>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="types.html">Types</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>SIGN UP</h1><br>
+            <form action="signup.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required><br>
+                <input type="submit" value="Sign Up">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
